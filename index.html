@@ -1,0 +1,47 @@
+<!DOCTYPE html >
+<html>
+  <head>
+    <meta charset="UTF-8 ">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora da Estelita</title>
+  </head>
+  <body>
+    <div class="quadrado">
+      <h1 class="calculadora">Calculadora</h1>
+      <p class="tela"></p><button class="apagar" onclick="apagar()">⌫</button>
+    <table>
+      <tr>
+        <td><button class="c" onclick="limpar()">C</button></td>
+        <td><button class="numbers" onclick="toque('%')">%</button></td>
+        <td><button class="numbers" onclick="toque('**')">x²</button></td>
+        <td><button class="numbers" onclick="toque('/')">÷</td>
+      </tr>
+      <tr>
+        <td><button onclick="toque('7')">7</butoon></td>
+        <td><button  onclick="toque('8')">8</button></td>
+        <td><button onclick="toque('9')">9</button></td>
+        <td><button class="numbers" onclick="toque('*')">×</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="toque('4')">4</button></td>
+        <td><button onclick="toque('5')">5</button></td>
+        <td><button  onclick="toque('6')">6</button></td>
+        <td><button class="numbers" onclick="toque('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="toque('1')">1</button></td>
+        <td><button  onclick="toque('2')">2</button></td>
+        <td><button onclick="toque('3')">3</button></td>
+        <td><button class="numbers" onclick="toque('+')">+</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button onclick="toque('0')">0</button></td>
+        <td><button onclick="toque('.')">.</button></td>
+        <td class="igual"><button class="igual" onclick="calcular()">=</button></td>
+      </tr>
+    </table>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
